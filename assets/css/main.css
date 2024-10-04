@@ -1082,19 +1082,19 @@ body .hur54b {
 
 #image1{
 	/* margin-top: 22%; */
-	margin-top:15em;
+	margin-top:10em;
 	width: 320px;
 	height:250px;
 }
 #image2{
 	/* margin-top: 22%; */
-	margin-top:15em;
+	margin-top:10em;
 	width: 320px;
 	height:250px;
 }
 #image3{
 	/* margin-top: 22%; */
-	margin-top:15em;
+	margin-top:10em;
 	width: 320px;
 	height:250px;
 }
@@ -1113,48 +1113,48 @@ body .hur54b {
 
 @media screen and (max-width:1024px) {
 	#image1{
-		margin-top: 90%;
+		margin-top: 55%;
 		margin-bottom: 0%;
 	}
 	}
 @media screen and (max-width:980px) {
 	#image1{
-		margin-top: 25%;
+		margin-top: 20%;
 		margin-bottom: 0%;
 	}
 	}
-	@media screen and (max-width:979px) {
+	/* @media screen and (max-width:979px) {
 		#image1{
 			margin-top: 30%;
 			margin-bottom: 0%;
 		}
-		}
+		} */
 	
 	@media screen and (max-width:830px) {
 		#image1{
-			margin-top: 32%;
+			margin-top: 20%;
 			margin-bottom: 0%;
 		}
 		}
-	@media screen and (max-width:800px) {
+	/* @media screen and (max-width:800px) {
 		#image1{
 			margin-top: 35%;
 			margin-bottom: 0%;
 		}
-		}
+		} */
 		@media screen and (max-width:750px) {
 			#image1{
-				margin-top: 35%;
+				margin-top:20%;
 				margin-bottom: 0%;
 			}
 			}	
 
-			@media screen and (max-width:735px) {
+			/* @media screen and (max-width:735px) {
 				#image1{
 					margin-top: 30%;
 					margin-bottom: 0%;
 				}
-				}	
+				}	*/
 		@media screen and (max-width:665px) {
 				#image1{
 					margin-top: 34%;
@@ -1182,7 +1182,7 @@ body .hur54b {
 	}
 @media screen and (max-width:1024px) {
 		#image2{
-		margin-top: 90%;
+		margin-top: 55%;
 		margin-bottom: 0%;
 		}
 				}
@@ -1201,7 +1201,7 @@ body .hur54b {
 	} */
 @media screen and (max-width:1024px) {
 	#image3{
-		margin-top: 90%;
+		margin-top: 55%;
 	margin-bottom: 0%;
 					}
 							}
@@ -1215,6 +1215,7 @@ body .hur54b {
 	#servicetext{
 		font-size: 1.4em;
 		color: black;
+		font-weight: 600;
 	}
 		@media screen and (max-width:1040px) {
 		#servicetext{
@@ -1237,9 +1238,13 @@ body .hur54b {
 		}
 	}
 
+	
 	#headtext{
 		font-size: 1.4em;
+		color: white;
+		font-weight: 600;
 	}
+	
 	@media screen and (max-width:1040px) {
 		#headtext{
 			font-size: 1.4em;
@@ -1267,6 +1272,8 @@ body .hur54b {
 	#exptext{
 		font-size: 1.4em;
 		/* padding-left: 1%; */
+		font-weight: 600;
+		color: white;
 	}
 	@media screen and (max-width:1040px) {
 		#exptext{
@@ -1289,6 +1296,7 @@ body .hur54b {
 	@media screen and (max-width:500px) {
 		#exptext{
 			font-size: 1.4em;
+			margin-bottom: 2%;;
 		}
 		
 	}
@@ -1296,7 +1304,7 @@ body .hur54b {
 	#printrequest{
 		background-color: brown;
 		color: white;
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 	@media screen and (max-width:1040px) {
 		#preintrequest{
@@ -1321,6 +1329,22 @@ body .hur54b {
 			font-size: 1.4em;
 		}
 		
+	}
+
+	#experience-margin{
+		margin-bottom: 1%;
+
+	}
+	@media screen and (max-width:500px) {
+		#experience-margin{
+			margin-bottom: 3%;
+		}
+		
+	}
+	#contact{
+		font-size: 1.4em;
+		color: black;
+		font-weight: 600;
 	}
 	
 		@media screen and (max-width: 980px) {
@@ -3228,7 +3252,7 @@ body .hur54b {
 	}
 
 		#header a {
-			border-bottom-color: rgba(255, 255, 255, 0.5);
+			/* border-bottom-color: rgba(255, 255, 255, 0.5); */
 		}
 
 			#header a:hover {
