@@ -1,4 +1,9 @@
 <!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
 		<title>Centre of Holistic Healings Art(Calgary)</title>
@@ -11,29 +16,98 @@
 		
 		<!--  -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-		<link rel="preconnect" href="https://fonts.gstatic.com" />		
-		<link rel="stylesheet"  href="assets/css/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"/> -->
+		<link rel="stylesheet"href="style.css" />
+		 <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+
+
 	</head>
+	<style>
+		    *{
+    margin: 0;
+    padding: 0;
+
+    }
+
+.navbar-nav{
+    margin-right: 0 !important;
+    padding-right: 100px;
+	/* font-size: 1.4em; */
+}
+
+.navbar{
+	position: static;
+	position: -webkit-sticky;
+	top: 0;
+    background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(25deg, #0a36e6cb 10%, #220344 60%, #0a7ce6cb);
+    color: white !important;
+	
+}
+
+.nav-item a{
+	/* position: sticky; */
+    color: white !important;
+	/* text-decoration: none !important; */
+}
+
+.nav-item{
+    padding-left: 2px;
+}
+
+.navbar-brand{
+    color: white !important;
+    padding-left: 100px;
+}
+
+#navbar button{
+    color: white !important;
+} 
+.navbar-light .navbar-toggler-icon {
+	background-image: url("images/nav.png");
+}
+
+li a:hover{
+	color: rgb(255, 127, 191) !important;
+	/* background-color: beige; */
+
+}
+ul{
+	text-decoration: none;
+}
+</style>
+	
 	<body class="is-preload" style="font-weight: 500;">
 		
 		<!-- navbar -->
 		<section id="navbar" >
-			<nav class="navbar">
-				
-				  <ul class="menu-list">
-					<div class="icon cancel-btn">
-					  <i class="fas fa-times"></i>
-					</div>
-					<li><a href="#">Home</a></li>
-					<li><a href="#printrequest">About</a></li>
-					<li><a href="#three">Services</a></li>
-					<li><a href="#six">Contact</a></li>
+			<nav class="navbar navbar-expand-lg navbar-light">
+			  <div class="container-fluid"><a class="navbar-brand" href="#"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <ul class="navbar-nav m-auto">
+					<li class="nav-item">
+					  <a class="nav-link active" aria-current="page" href="#" style="font-size: 1.3em;">Home</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#three" style="font-size: 1.3em;">Services</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#fourreiki" style="font-size: 1.3em;">About Us</a>
+					</li>
+					<!-- <li class="nav-item">
+					  <a class="nav-link" 
+						 href="#product">Products</a>
+					</li> -->
+					<li class="nav-item">
+					  <a class="nav-link" href="#contact" style="font-size: 1.3em;">Contact Us</a>
+					</li>
 				  </ul>
-				  <div class="icon menu-btn">
-					<i class="fas fa-bars"></i>
-				  </div>
 				</div>
-			  </nav>
+			  </div>
+			</nav>
 		  </section>
 			  
 
@@ -45,7 +119,7 @@
 					<h1>What is Reiki</h1>
 					<p style="text-align: center;" id = "headtext"><b>The word <strong style="color: rgb(240, 8, 128);" >Reiki</strong> means <strong style="color: rgb(224, 240, 8);"><i>Universal Life Force Energy</i></strong>. It is defined as being the Power which acts and lives in all created matter. Reiki is a Japnese word where the syllable <strong style="color: rgb(224, 240, 8);">'REI'</strong> describes the Universal boundless beings and <strong style="color: rgb(224, 240, 8);" >"KI"</strong> means energy. It is one of the highest Forms of energy in existence. Everyone is born with REIKI, for it is the energy of life itself.</b></p>
 					<ul class="actions special">
-						<div class = "button"><li><a href="#printrequest" style="text-decoration: none; color: white;font-weight: 800; font-size: 1.4em;">More About Reiki</a></li></div>
+						<div class = "button"><li><a href="#fourreiki" style="text-decoration: none; color: white;font-weight: 800; font-size: 1.4em;">More About Reiki</a></li></div>
 					</ul>
 				</div>
 			</section>
@@ -242,7 +316,7 @@
   							window.addEventListener('load', function() {
     						calendar.schedulingButton.load({
      						url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1cbK5ymG9DAQdDMXq4g3Q9gPGg7F8PtIDDIHVLgayeiK4Ig9aX4IzZ82PiCiyJqCFYtk9Ob_s6?gv=true',
-      						color: '#FF6500',
+      						color: '#D7C3F1',
       						label: 'Book an appointment',
       						target,
 					    	});
@@ -269,24 +343,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"crossorigin="anonymous"></script>
-			<script>
-				const body = document.querySelector("body");
-				const navbar = document.querySelector(".navbar");
-				const menuBtn = document.querySelector(".menu-btn");
-				const cancelBtn = document.querySelector(".cancel-btn");
-				menuBtn.onclick = ()=>{
-				  navbar.classList.add("show");
-				  menuBtn.classList.add("hide");
-				  body.classList.add("disabled");
-				}
-				cancelBtn.onclick = ()=>{
-				  body.classList.remove("disabled");
-				  navbar.classList.remove("show");
-				  menuBtn.classList.remove("hide");
-				}
-				window.onscroll = ()=>{
-				  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-				}
-			  </script>
+
 	</body>
 </html>
