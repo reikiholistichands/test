@@ -37,9 +37,11 @@
 }
 
 .navbar{
-	position: static;
+	position: fixed;
 	position: -webkit-sticky;
-	top: 0;
+	/* top: 0; */
+	z-index: 2;
+	width: 100%;
     background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(25deg, #0a36e6cb 10%, #220344 60%, #0a7ce6cb);
     color: white !important;
 	
@@ -316,7 +318,7 @@ ul{
   							window.addEventListener('load', function() {
     						calendar.schedulingButton.load({
      						url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1cbK5ymG9DAQdDMXq4g3Q9gPGg7F8PtIDDIHVLgayeiK4Ig9aX4IzZ82PiCiyJqCFYtk9Ob_s6?gv=true',
-      						color: '#D7C3F1',
+      						color: '#FF6500',
       						label: 'Book an appointment',
       						target,
 					    	});
