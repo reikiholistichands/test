@@ -1320,6 +1320,11 @@ body .hur54b {
 		color: white;
 		font-size: 1.2em;
 	}
+	#print{
+		background-color: brown;
+		color: white;
+		font-size: 1.2em;
+	}
 	@media screen and (max-width:1040px) {
 		#preintrequest{
 			font-size: 1.4em;
