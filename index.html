@@ -1,348 +1,558 @@
 <!DOCTYPE HTML>
 <!--
-	Photon by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Photon by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Centre of Holistic Healings Art(Calgary)</title>
-		<meta charset="utf-8" />
-		<meta name="google-site-verification" content="7skBU_R-aXAmXhYfXgqI6V9zkmIC9hKy538cS01WrWw" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="shortcut icon" type="image/x-icon" href="images/logo.PNG" />
-		
-		<!--  -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"/> -->
-		<!-- <link rel="stylesheet"href="style.css" /> -->
-		 <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-
-
-	</head>
-	<style>
-		    *{
-    margin: 0;
-    padding: 0;
-
+    <head>
+        <title>Centre of Holistic Healings Art(Calgary)</title>
+        <meta charset="utf-8" />
+        <meta name="google-site-verification" content="7skBU_R-aXAmXhYfXgqI6V9zkmIC9hKy538cS01WrWw" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="shortcut icon" type="image/x-icon" href="images/logo.PNG" />
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+    </head>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
     }
 
-.navbar-nav{
-    margin-right: 0 !important;
-    padding-right: 100px;
-	/* font-size: 1.4em; */
-}
+    .navbar-nav {
+        margin-right: 0 !important;
+        padding-right: 100px;
+    }
 
-.navbar{
-	position: fixed;
-	position: -webkit-sticky;
-	top: 0;
-	-webkit-overflow-scrolling: auto !important;
-	z-index: 2;
-	width: 100%;
-    background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(25deg, #0a36e6cb 10%, #220344 60%, #0a7ce6cb);
-    color: white !important;
-	
-}
+    .navbar {
+        position: fixed;
+        position: -webkit-sticky;
+        top: 0;
+        -webkit-overflow-scrolling: auto !important;
+        z-index: 2;
+        width: 100%;
+        background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(25deg, #0a36e6cb 10%, #220344 60%, #0a7ce6cb);
+        color: white !important;
+    }
 
-.nav-item a{
-	/* position: sticky; */
-    color: white !important;
-	/* text-decoration: none !important; */
-}
+    .nav-item a {
+        color: white !important;
+    }
 
-.nav-item{
-    padding-left: 2px;
-}
+    .nav-item {
+        padding-left: 2px;
+    }
 
-.navbar-brand{
-    color: white !important;
-    padding-left: 100px;
-}
+    .navbar-brand {
+        color: white !important;
+        padding-left: 100px;
+    }
 
-#navbar button{
-    color: white !important;
-} 
-.navbar-light .navbar-toggler-icon {
-	background-image: url("images/nav.png");
-}
+    #navbar button {
+        color: white !important;
+    } 
 
-li a:hover{
-	color: rgb(255, 127, 191) !important;
-	/* background-color: beige; */
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("images/nav.png");
+    }
 
-}
-ul{
-	text-decoration: none;
-}
-</style>
-	
-	<body class="is-preload" style="font-weight: 500;">
-		
-		<!-- navbar -->
-		<section id="navbar" >
-			<nav class="navbar navbar-expand-lg navbar-light">
-			  <div class="container-fluid"><a class="navbar-brand" href="#"></a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"aria-label="Toggle navigation">
-				  <span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				  <ul class="navbar-nav m-auto">
+    li a:hover {
+        color: rgb(255, 127, 191) !important;
+    }
+
+    ul {
+        text-decoration: none;
+    }
+
+    /* Custom Image Gallery Slider Styling */
+    .image-slider-container {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    .image-slider-container .carousel-item img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+        .image-slider-container .carousel-item img {
+            height: 250px;
+        }
+    }
+
+    #imageGalleryCarousel .carousel-control-prev,
+    #imageGalleryCarousel .carousel-control-next {
+        width: 42px;
+        height: 42px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        opacity: 0.85;
+        transition: opacity 0.2s ease, background-color 0.2s ease;
+    }
+
+    #imageGalleryCarousel .carousel-control-prev {
+        left: 15px;
+    }
+
+    #imageGalleryCarousel .carousel-control-next {
+        right: 15px;
+    }
+
+    #imageGalleryCarousel .carousel-control-prev:hover,
+    #imageGalleryCarousel .carousel-control-next:hover {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #imageGalleryCarousel .carousel-control-prev-icon,
+    #imageGalleryCarousel .carousel-control-next-icon {
+        filter: brightness(0) invert(1);
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    /* Custom Testimonial Carousel Styling */
+    .testimonial-card {
+        border: 2px solid #000;
+        background-color: #e0f2fe; /* Light blue background */
+        padding: 2.5rem 2rem 3.5rem 2rem;
+        position: relative;
+        border-radius: 8px;
+        min-height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .testimonial-text {
+        color: #1e293b !important;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        font-style: italic;
+        text-align: left;
+        margin: 0;
+    }
+
+    .testimonial-author {
+        position: absolute;
+        bottom: 12px;
+        right: 20px;
+        font-size: 1.05rem;
+        font-weight: 800;
+        color: #0f172a;
+        margin: 0;
+    }
+
+    /* Carousel Wrapper Spacing for Dots */
+    #testimonialCarousel {
+        position: relative;
+        padding-bottom: 25px; /* Room for shifted indicators */
+    }
+
+    /* Centered Left/Right Navigation Arrows */
+    #testimonialCarousel .carousel-control-prev,
+    #testimonialCarousel .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.35);
+        border-radius: 50%;
+        opacity: 0.85;
+        transition: opacity 0.2s ease, background-color 0.2s ease;
+    }
+
+    #testimonialCarousel .carousel-control-prev {
+        left: 5px;
+    }
+
+    #testimonialCarousel .carousel-control-next {
+        right: 5px;
+    }
+
+    #testimonialCarousel .carousel-control-prev:hover,
+    #testimonialCarousel .carousel-control-next:hover {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    /* White Arrows */
+    #testimonialCarousel .carousel-control-prev-icon,
+    #testimonialCarousel .carousel-control-next-icon {
+        filter: brightness(0) invert(1); /* Forces purely white SVG icons */
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    /* Position Indicators (Dots) Further Down */
+    #testimonialCarousel .carousel-indicators {
+        bottom: -20px;
+        margin-bottom: 0;
+    }
+
+    #testimonialCarousel .carousel-indicators [data-bs-target] {
+        background-color: #000;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 5px;
+        opacity: 0.5;
+    }
+
+    #testimonialCarousel .carousel-indicators .active {
+        opacity: 1;
+        background-color: #000;
+    }
+    </style>
+    
+    <body class="is-preload" style="font-weight: 500;">
+        
+        <!-- navbar -->
+        <section id="navbar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid"><a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#" style="font-size: 1.3em;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#three" style="font-size: 1.3em;">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#print" style="font-size: 1.3em;">About Reiki</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#centertour" style="font-size: 1.3em;">Center Tour</a>
+                    </li>
 					<li class="nav-item">
-					  <a class="nav-link active" aria-current="page" href="#" style="font-size: 1.3em;">Home</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="#three" style="font-size: 1.3em;">Services</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="#print" style="font-size: 1.3em;">About Reiki</a>
-					</li>
-					<!-- <li class="nav-item">
-					  <a class="nav-link" 
-						 href="#product">Products</a>
-					</li> -->
-					<li class="nav-item">
-					  <a class="nav-link" href="#contact" style="font-size: 1.3em;">Contact Us</a>
-					</li>
-				  </ul>
-				</div>
-			  </div>
-			</nav>
-		  </section>
-			  
+                      <a class="nav-link" href="#contact" style="font-size: 1.3em;">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </section>
 
-		<!-- Header -->
-			<section id="header">
-				<div class="inner">
-					<img src="images/logo.PNG" style="border-radius: 100px; max-width:80px; height: 80px; border:5px solid rgba(223, 12, 213, 0.637);">
-					<h1 ><strong >Centre of Holistic Healings Art.</strong></h1>
-					<h1>What is Reiki</h1>
-					<p style="text-align: center;" id = "headtext"><b>The word <strong style="color: rgb(240, 8, 128);" >Reiki</strong> means <strong style="color: rgb(224, 240, 8);"><i>Universal Life Force Energy</i></strong>. It is defined as being the Power which acts and lives in all created matter. Reiki is a Japnese word where the syllable <strong style="color: rgb(224, 240, 8);">'REI'</strong> describes the Universal boundless beings and <strong style="color: rgb(224, 240, 8);" >"KI"</strong> means energy. It is one of the highest Forms of energy in existence. Everyone is born with REIKI, for it is the energy of life itself.</b></p>
-					<ul class="actions special">
-						<div class = "button"><li><a href="#print" style="text-decoration: none; color: white;font-weight: 800; font-size: 1.4em;">More About Reiki</a></li></div>
-					</ul>
-				</div>
-			</section>
+        <!-- Header -->
+            <section id="header">
+                <div class="inner">
+                    <img src="images/logo.PNG" style="border-radius: 100px; max-width:80px; height: 80px; border:5px solid rgba(223, 12, 213, 0.637);">
+                    <h1><strong>Centre of Holistic Healings Art.</strong></h1>
+                    <h1>What is Reiki</h1>
+                    <p style="text-align: center;" id="headtext"><b>The word <strong style="color: rgb(240, 8, 128);">Reiki</strong> means <strong style="color: rgb(224, 240, 8);"><i>Universal Life Force Energy</i></strong>. It is defined as being the Power which acts and lives in all created matter. Reiki is a Japnese word where the syllable <strong style="color: rgb(224, 240, 8);">'REI'</strong> describes the Universal boundless beings and <strong style="color: rgb(224, 240, 8);">"KI"</strong> means energy. It is one of the highest Forms of energy in existence. Everyone is born with REIKI, for it is the energy of life itself.</b></p>
+                    <ul class="actions special">
+                        <div class="button"><li><a href="#print" style="text-decoration: none; color: white;font-weight: 800; font-size: 1.4em;">More About Reiki</a></li></div>
+                    </ul>
+                </div>
+            </section>
 
-		<!-- One -->
-			<section id="one" class="main style1">				
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2><b><i>Jaswinder Singh Sidhu</i></b></h2>
-								<h4><b>(Traditional Reiki Master and Crystal Master)</b></h4>
-							</header>
-							<p ><b  id = "headtext" style="color: black;">I, Jaswinder Singh Sidhu, received this gift of Reiki from Dr. Karanpal Singh Sandhu in the year of 2005. In November 2011, I was blessed with Reiki Mastership by my Guru Dr. Karanpal Singh Sandhu. I have been teaching various methods of natural healing since 2012 in India. Presently, I am residing in Canada, as per the divine wish to spread the knowledge of Reiki far and wide. People from all walks of life, various professions and of all age groups have learnt and benefited from this unique healing technique.</b> </p>
-						</div>
-						<div class="col-6 col-12-medium imp-medium">
-							<span ><img id ="sirpic" src="images/pic11.jpg" style="height:18em; width: 12em;" /></span>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- My Gurus -->
-			<section id="twoservice" class="main style2 special">
-				<div class="container">					
-					<div class = "mygrid-container">						
-						<div class = "mycard">
-							<h2 style="margin-bottom: 0%;"><b>Reiki Founder</b></h2>
-							<img src="images/pic13.png" style="width: 200px; height: 250px;">
-							<p id = "headtext"><b>Dr. Mikao Usui</b></p>				
-						</div>
-						<div class = "mycard">
-							<h2 style="margin-bottom: 0%; "><b>1st Reiki Disciple</b></h2>
-							<img src="images/pic01.png" style="width: 200px; height: 250px;">
-							<p id = "headtext"><b>Dr. Chujiro Hayashi</b></p>				
-						</div>
-						<div class = "mycard">
-							<h2 style="margin-bottom: 0%; "><b>2nd Reiki Disciple</b></h2>
-							<img src="images/pic02.png" style="width: 200px; height: 250px;">
-							<p id = "headtext"><b>Dr. Takata Hawayo</b></p>				
-						</div>
-						<div class = "mycard">
-							<h2 style="margin-bottom: 0%;"><b>My Beloved Guru</b></h2>
-							<img src="images/pic12.png"  style="width: 200px; height: 250px;">
-							<p id="headtext"><b>Dr. Karanpal Singh Sandhu</b></p>							
-						</div>
-					</div>
-					</div>
-			</section>		
-		<!-- services -->
-			<section id="three" class="main style1 special">
-				<div class="container">
-					<header class="major">
-						<h2 ><b>Services</b></h2>
-					</header>
-					<div class="mygrid-container">
-						<div class="mycard" style="text-align: left;height: 11em;margin-top: 0%;padding-top: 0%; padding-bottom:0%">
-							<p style=" margin-top: 0%; text-indent: .2em; font-weight: 600;"><b id = "servicetext">														
-								<span style="display: list-item; margin-bottom:0% ;">In-person Reiki healing sessions</span>
-								<span style="display: list-item;">Distance healing session</span> 
-								<span style="display: list-item;">Reiki 1st Degree</span> 
-								<span style="display: list-item;">Reiki 2nd Degree</span>
-								<span style="display: list-item;">Crystal seminars(Crystals can be learnt after 2nd degree of Reiki)
-								<span style="display: list-item;">Meditation Camps(from time to time)</span>
-																							
-							</b></p>
-							<p></p>
-						</div>
-					</div>
-					
-					<div class="row gtr-150">
-						<div class="col-4 col-12-medium">
-							<span class="image fit"><img id = "image1" src="images/pic07.png"  alt="" /></span>
-							<h3><b id = "servicetext">Reiki 1st Degree</b></h3>
-							<p ><b id="servicetext">The First level of Reiki is learnt in two days seminar covering a minimum of 10 to 12 hours. In the first level of Reiki, through the Initiation process, the learner's Reiki channel is activated and the flow of Reiki is accelerated. After the first Initiation, the learner can feel the heat and the waves of energy in their hands. The learner will also be able to do Reiki to himself and others.</b></p>
-							
-						</div>
-						<div class="col-4 col-12-medium">
-							<span class="image fit"><img  id = "image2" src="images/reiki.jpg" alt=""/></span>
-							<h3><b id = "servicetext">Reiki 2nd Degree</b></h3>
-							<p ><b id = "servicetext">In the Reiki 1st Degree we pay attention towards the physical body whereas in 2nd degree we work with the energy body. With attunement of 2nd degree we become able to follow the right path in our life. This level of Reiki works beyond the limit of time and space.</b></p>
-							
-						</div>
-						<div class="col-4 col-12-medium">
-							<span class="image fit"><img id = "image3" src="images/pic16.png" alt=""/></span>
-							<h3><b id = "servicetext">Crystal Healing</b></h3>
-							<p><b id = "servicetext">Crystal healing is a form of vibrational medicine in which subtle energy given off by a crystal is used to treat the body, mind spirit, and the emotions. Crystals exhibit a type of orderly perfection, which helps to bring healing light and loving encouragement to all beings. Since both crystal and the human body have an inherent energetic blueprint.</b></p>
-							
-						</div>
-					</div>
-				</div>
-			</section>
-			<section>
-				<section>
-					<span id = "print" style=" font-size: 1.3em; text-align: center;display: block; background-color: brown; margin-bottom: 1em;"><b style="color:white">Note- REIKI further levels are taught only after attaining certain level of ability.</b></span>					
-				</section>
-			</section>
+        <!-- One -->
+            <section id="one" class="main style1">              
+                <div class="container">
+                    <div class="row gtr-150">
+                        <div class="col-6 col-12-medium">
+                            <header class="major">
+                                <h2><b><i>Jaswinder Singh Sidhu</i></b></h2>
+                                <h4><b>(Traditional Reiki Master and Crystal Master)</b></h4>
+                            </header>
+                            <p><b id="headtext" style="color: black;">I, Jaswinder Singh Sidhu, received this gift of Reiki from Dr. Karanpal Singh Sandhu in the year of 2005. In November 2011, I was blessed with Reiki Mastership by my Guru Dr. Karanpal Singh Sandhu. I have been teaching various methods of natural healing since 2012 in India. Presently, I am residing in Canada, as per the divine wish to spread the knowledge of Reiki far and wide. People from all walks of life, various professions and of all age groups have learnt and benefited from this unique healing technique.</b> </p>
+                        </div>
+                        <div class="col-6 col-12-medium imp-medium">
+                            <span><img id="sirpic" src="images/pic11.jpg" style="height:18em; width: 12em;" /></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-			<!-- About Reiki -->
-			<section id="fourreiki" class="main style2 special">
-				<div class="container">
-					<header class = "major">
-						<h2><b>About Reiki and Its History</b></h2>
-					</header>					
-							<p style="margin-bottom: 1%;text-align: justify;" ><b id = "exptext">Reiki is a Japanese word where "Rei" means universal life force and "Ki" means energy. It is this energy with which we are born and live throughout the life.This Universal life Force Energy is pervasive throughout the entire Universe and has the potential to heal all living beings and even non-living things. Reiki makes a person healthy by affecting his all the three aspects i.e. Body, Mind and Soul. <br>
-							Reiki is not a Religion. It has nothing to do with calling Spirits, Black magic or Hypnosis. Any person whether educated or uneducated, of any profession can learn Reiki. The founder of Reiki was from Japan. He imparted this education of Reiki to the people and established a Reiki channel. Shortly before his death, Dr. Usui gave this responsibility to carry forword this method of Reiki healing to his Disciple Dr. Chujiro Hayashi. In 1938, Dr. Hayashi granted Masteership to Takata Hawayo and made her a Reiki Master. In India, the knowledge of Reiki was introduced by Dr. Poula Horan in 1986 and Dr. Karanpal Singh Sandhu was the one to become the first Reiki Master in the whole North India. Due to its simplicity, the knowledge of Reiki is gaining popularity all over the world and the number of people learning Reiki is increasing day by day.</b></p>
-							<p style="background-color: brown;" ><b id="exptext" style="color:white;">NOTE: Reiki healing can be done from distance but it is not possible to learn Reiki from distance or over the internet (beacuse initiation process which is performed by a true Reiki Master is possible only if Reiki learner is physically present). Beware of such wrong persons who claims to teach Reiki from distance or over the internet</b></p>					
-				</div>
-			</section>	
-			
-			<section id="four" class="main style2 special">
-				<div class="container">
-					<header class = "major">
-						<h2><b>Benefits of Reiki</b></h2>
-					</header>
-					<p style="margin-bottom: 1%;text-align: justify;" ><b id = "exptext">One of the greatest benefit of  <strong style="color: rgb(224, 240, 8);">REIKI</strong> is self-treatment.
-						Once a person is attuned, he or she need only have intention to do <strong style="color: rgb(224, 240, 8);">REIKI</strong> on him/her self or others, and the energy is immediately drawn through on its own accord with no further intense focus from the Practitioner needed. <strong style="color: rgb(224, 240, 8);">It is an extremely effective technique for total relaxation and stress release</strong> One is filled with a sensation of peace, vitality and joy, often combined with a pleasant feeling of security and of being enclosed in a fine sheath of energy. Treating oneself also helps to release withheld emotions and energy blocks, REIKI works holistically.
-						REIKI not only can effect changes in the chemical structure of the body by helping to regenerate offgans and rebuild tissue and bones, it also helps create a balance on the mental level. REIKI is a wonderful tool to help one <strong style="color: rgb(224, 240, 8);">develop conscious awareness, the very key to enlightenment.</strong> </b></p>
-						<p style="margin-bottom: 1%;text-align: justify;" ><b id = "exptext">REIKI affects each individual in very personal way-the result being determined by the needs of the person being treated, some common denominators which seem to result in most treatments are that, it.</b></p>
-						<p style="text-align:left;" id="exptext">
-							<span style="display: list-item;">Balances Energy</span>
-							<span style="display: list-item;">Increases Creativity</span>
-							<span style="display: list-item;">Helps Release Emotions</span>
-							<span style="display: list-item;">Release Stress</span>
-							<span style="display: list-item;">Amplifies Energy</span>
-							<span style="display: list-item;">Works on Casual Level of Disease</span>
-							<span style="display: list-item;">Heals Holistically</span>
-						</p>
-						<p style="margin-bottom: 1%;text-align: justify;" ><b id = "exptext">REIKI can never do damage in any way, since it only flows in the quantities necessary for the recipient.
-							The Usui System of REIKI is not only the most simple and natural healing method we know of, but it is also the most effective way of transferring this Universal Life energy. Once a person has been opened up to become a "channel" for REIKI concentrated life energy will flow through hands on its own accord and will retain this ability for the rest of his life</b></p>
-							<header class = "major">
-								<h2><b style="background-color:brown">What Reiki is not</b></h2>
-							</header>
-							<p style="margin-bottom: 1%;text-align: justify;" ><b id = "exptext">REIKI is not a religion, as it holds no creed or doctrine. It has nothing to do with spiritualism or occult in any shape or form. It has nothing to do with the calling up of ghosts or demons, nor is it concerned with hypnosis or any other kind of psychological technique. To practice REIKI no special kind of faith or belief is required.In REIKI treatment, use is made solely of natural but concentrated form of cosmic energy.</b></p>
-					
-			
-				</div>
-			</section>	
-			
+            <!-- My Gurus -->
+            <section id="twoservice" class="main style2 special">
+                <div class="container">                 
+                    <div class="mygrid-container">                        
+                        <div class="mycard">
+                            <h2 style="margin-bottom: 0%;"><b>Reiki Founder</b></h2>
+                            <img src="images/pic13.png" style="width: 200px; height: 250px;">
+                            <p id="headtext"><b>Dr. Mikao Usui</b></p>                
+                        </div>
+                        <div class="mycard">
+                            <h2 style="margin-bottom: 0%;"><b>1st Reiki Disciple</b></h2>
+                            <img src="images/pic01.png" style="width: 200px; height: 250px;">
+                            <p id="headtext"><b>Dr. Chujiro Hayashi</b></p>               
+                        </div>
+                        <div class="mycard">
+                            <h2 style="margin-bottom: 0%;"><b>2nd Reiki Disciple</b></h2>
+                            <img src="images/pic02.png" style="width: 200px; height: 250px;">
+                            <p id="headtext"><b>Dr. Takata Hawayo</b></p>             
+                        </div>
+                        <div class="mycard">
+                            <h2 style="margin-bottom: 0%;"><b>My Beloved Guru</b></h2>
+                            <img src="images/pic12.png" style="width: 200px; height: 250px;">
+                            <p id="headtext"><b>Dr. Karanpal Singh Sandhu</b></p>                          
+                        </div>
+                    </div>
+                </div>
+            </section>      
 
-			<section id="five" class="main style1 special">
-				<div class="container">
-					<header class = "major">
-						<h2><b>Reiki Experiences</b></h2>
-					</header>				
-							<p id="experience-margin;"><b id = "exptext" style="color:black">There are thousands of people who have learnt Reiki and have got various experiences. It is not possible to record all those experiences. However, a few of those experiences have been shared below to highlight various aspects of Rieki.</b></p>
+        <!-- Services -->
+            <section id="three" class="main style1 special">
+                <div class="container">
+                    <header class="major">
+                        <h2><b>Services</b></h2>
+                    </header>
+                    <div class="mygrid-container">
+                        <div class="mycard" style="text-align: left;height: 11em;margin-top: 0%;padding-top: 0%; padding-bottom:0%">
+                            <p style="margin-top: 0%; text-indent: .2em; font-weight: 600;"><b id="servicetext">                                                    
+                                <span style="display: list-item; margin-bottom:0%;">In-person Reiki healing sessions</span>
+                                <span style="display: list-item;">Distance healing session</span> 
+                                <span style="display: list-item;">Reiki 1st Degree</span> 
+                                <span style="display: list-item;">Reiki 2nd Degree</span>
+                                <span style="display: list-item;">Crystal seminars(Crystals can be learnt after 2nd degree of Reiki)</span>
+                                <span style="display: list-item;">Meditation Camps(from time to time)</span>
+                            </b></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row gtr-150">
+                        <div class="col-4 col-12-medium">
+                            <span class="image fit"><img id="image1" src="images/pic07.png" alt="" /></span>
+                            <h3><b id="servicetext">Reiki 1st Degree</b></h3>
+                            <p><b id="servicetext">The First level of Reiki is learnt in two days seminar covering a minimum of 10 to 12 hours. In the first level of Reiki, through the Initiation process, the learner's Reiki channel is activated and the flow of Reiki is accelerated. After the first Initiation, the learner can feel the heat and the waves of energy in their hands. The learner will also be able to do Reiki to himself and others.</b></p>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <span class="image fit"><img id="image2" src="images/reiki.jpg" alt=""/></span>
+                            <h3><b id="servicetext">Reiki 2nd Degree</b></h3>
+                            <p><b id="servicetext">In the Reiki 1st Degree we pay attention towards the physical body whereas in 2nd degree we work with the energy body. With attunement of 2nd degree we become able to follow the right path in our life. This level of Reiki works beyond the limit of time and space.</b></p>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <span class="image fit"><img id="image3" src="images/pic16.png" alt=""/></span>
+                            <h3><b id="servicetext">Crystal Healing</b></h3>
+                            <p><b id="servicetext">Crystal healing is a form of vibrational medicine in which subtle energy given off by a crystal is used to treat the body, mind spirit, and the emotions. Crystals exhibit a type of orderly perfection, which helps to bring healing light and loving encouragement to all beings. Since both crystal and the human body have an inherent energetic blueprint.</b></p><p id="centertour"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-							<p style=" color: black;text-align:left; border: 2px solid black;margin-bottom: 2%;"><b>
-							<i id = "exptext" style="color:black">&#8226  "My experience with reiki has been other worldly. After practicing reiki I have realized that I am a part of this infinite flow and I have been spiritually asleep my whole life. My life is now constantly filled with joy, peace, happiness, emotional and physical well-being. For this I would like to thank Reiki energy, my masters Jaswinder Singh ji, Dr. Karanapal Sir ji, Dr. Mikao Usui ji and all the other enlightened beings who are always with me."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="font-weight: 800;">-By Inderpreet Singh</b></i></b></p>
+            <!-- Our Center Tour Section -->
+            <section id="centertour" class="main style2 special">
+                <div class="container">
+                    <header class="major">
+                        <h2><b>Our Center Tour</b></h2>
+                    </header>
+                    <div id="imageGalleryCarousel" class="carousel slide image-slider-container" data-bs-ride="carousel" data-bs-interval="2000">
+                        <!-- Indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#imageGalleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#imageGalleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#imageGalleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
 
-							<p id="experience-margin" style="text-align:left; border: 2px solid black;margin-bottom: 2%;"><b>
-								 <i id = "exptext" style="color:black">&#8226 "Learning Reiki has been a transitional journey for me. It helped me heal physically and mentally. Also, Reiki gave me a new perspective towards life, attitude of gratitude."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="font-weight: 800;">-By Guneev Singh Batth</b></i></b>
-							</p>
+                        <!-- Slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/center1.jpeg" alt="Reiki Healing Practice">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/center4.jpeg" alt="Reiki Energy Balance">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/center3.jpeg" alt="Crystal Healing Session">
+                            </div>
+                        </div>
 
-							<p style="text-align:left; border: 2px solid black;margin-bottom: 2%;"><b>
-								<i id = "exptext" style="color:black">&#8226 "Reiki has given me a profound sense of purpose and understanding of my existence. Also, Reiki helped me to grow spiritually and filled my life with joy, blissfulness and happiness."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="font-weight: 800;">-By Navjot Singh Sarwara</b></i></b>
-							</p>
+                        <!-- Left & Right Navigation Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#imageGalleryCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#imageGalleryCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <section>
+                    <span id="print" style="font-size: 1.3em; text-align: center;display: block; background-color: brown; margin-bottom: 1em;"><b style="color:white">Note- REIKI further levels are taught only after attaining certain level of ability.</b></span>                    
+                </section>
+            </section>
 
-							<p style="text-align:left; border: 2px solid black;margin-bottom: 2%;"><b>
-									<i id = "exptext" style="color:black">&#8226 "Since I have learned reiki, my way of thinking and living life has been changed, that helps me to grow internally and externally as well as help me to stay calm in harsh conditions. Thank you Sir “Jaswinder Singh Sidhu”"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="font-weight: 800;" >-By Arshdeep Singh</b></i></b>
-							</p>
-							<p style="text-align:left; border: 2px solid black;margin-bottom: 2%;"><b>
-								<i id = "exptext" style="color:black">&#8226 "Reiki has healed me emotionally, mentally and physically. I experience more stability and calmness in my everyday life."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="font-weight: 800;">-By Bhavleen Arora</b></i></b>
-							</p>
-							<p style="text-align:left; border: 2px solid black;margin-bottom: 2%;"><b>
-								<i id = "exptext" style="color:black">&#8226 "After learning Reiki, I realized how unaware I was about the reality of life and the meaning of true joy. I got a tool to explore my inner self and a method to clean myself on all three aspects i.e. physical, mental and spiritual. I am grateful to Jaswinder Singh Sidhu for the gift of Reiki. Humble regards to Karanpal Singh Sandhu, and Dr. Mikao Usui."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="font-weight: 800;" >-By Manjeet Singh</b></i></b>
-						</p>
-							
-							
-				</div>
-			</section>		
-			<section>
-				<span id = "printrequest" style="text-align: center;display: block; background-color: brown;"><b style="color:white">Printed book will be provided on request.</b></span>					
-			</section>
-		<!-- Four -->
-			<section id="six" class="main style1 special">
-				<div class="container">
-					<header class="major">
-						<h2><b>Contact Us</b></h2>
-					</header>
-					<p id="contact">Feel free to reach out if you have any further inquires.<br>
-						<i class="fas fa-phone"></i> Phone: +1 (403) 970-9104<br>
-					<i class="fas fa-envelope"></i>  Email: reikiholistichands@gmail.com<br>
-					<i class="fas fa-map-pin"></i>   Address: 390 Redstone Blvd NE, Calgary, AB T3N 1K2</p>
+            <!-- About Reiki -->
+            <section id="fourreiki" class="main style2 special">
+                <div class="container">
+                    <header class="major">
+                        <h2><b>About Reiki and Its History</b></h2>
+                    </header>                   
+                    <p style="margin-bottom: 1%;text-align: justify;"><b id="exptext">Reiki is a Japanese word where "Rei" means universal life force and "Ki" means energy. It is this energy with which we are born and live throughout the life.This Universal life Force Energy is pervasive throughout the entire Universe and has the potential to heal all living beings and even non-living things. Reiki makes a person healthy by affecting his all the three aspects i.e. Body, Mind and Soul. <br>
+                    Reiki is not a Religion. It has nothing to do with calling Spirits, Black magic or Hypnosis. Any person whether educated or uneducated, of any profession can learn Reiki. The founder of Reiki was from Japan. He imparted this education of Reiki to the people and established a Reiki channel. Shortly before his death, Dr. Usui gave this responsibility to carry forword this method of Reiki healing to his Disciple Dr. Chujiro Hayashi. In 1938, Dr. Hayashi granted Masteership to Takata Hawayo and made her a Reiki Master. In India, the knowledge of Reiki was introduced by Dr. Poula Horan in 1986 and Dr. Karanpal Singh Sandhu was the one to become the first Reiki Master in the whole North India. Due to its simplicity, the knowledge of Reiki is gaining popularity all over the world and the number of people learning Reiki is increasing day by day.</b></p>
+                    <p style="background-color: brown;"><b id="exptext" style="color:white;">NOTE: Reiki healing can be done from distance but it is not possible to learn Reiki from distance or over the internet (beacuse initiation process which is performed by a true Reiki Master is possible only if Reiki learner is physically present). Beware of such wrong persons who claims to teach Reiki from distance or over the internet</b></p>                  
+                </div>
+            </section>  
+            
+            <section id="four" class="main style2 special">
+                <div class="container">
+                    <header class="major">
+                        <h2><b>Benefits of Reiki</b></h2>
+                    </header>
+                    <p style="margin-bottom: 1%;text-align: justify;"><b id="exptext">One of the greatest benefit of <strong style="color: rgb(224, 240, 8);">REIKI</strong> is self-treatment.
+                        Once a person is attuned, he or she need only have intention to do <strong style="color: rgb(224, 240, 8);">REIKI</strong> on him/her self or others, and the energy is immediately drawn through on its own accord with no further intense focus from the Practitioner needed. <strong style="color: rgb(224, 240, 8);">It is an extremely effective technique for total relaxation and stress release</strong> One is filled with a sensation of peace, vitality and joy, often combined with a pleasant feeling of security and of being enclosed in a fine sheath of energy. Treating oneself also helps to release withheld emotions and energy blocks, REIKI works holistically.
+                        REIKI not only can effect changes in the chemical structure of the body by helping to regenerate offgans and rebuild tissue and bones, it also helps create a balance on the mental level. REIKI is a wonderful tool to help one <strong style="color: rgb(224, 240, 8);">develop conscious awareness, the very key to enlightenment.</strong> </b></p>
+                    <p style="margin-bottom: 1%;text-align: justify;"><b id="exptext">REIKI affects each individual in very personal way-the result being determined by the needs of the person being treated, some common denominators which seem to result in most treatments are that, it.</b></p>
+                    <p style="text-align:left;" id="exptext">
+                        <span style="display: list-item;">Balances Energy</span>
+                        <span style="display: list-item;">Increases Creativity</span>
+                        <span style="display: list-item;">Helps Release Emotions</span>
+                        <span style="display: list-item;">Release Stress</span>
+                        <span style="display: list-item;">Amplifies Energy</span>
+                        <span style="display: list-item;">Works on Casual Level of Disease</span>
+                        <span style="display: list-item;">Heals Holistically</span>
+                    </p>
+                    <p style="margin-bottom: 1%;text-align: justify;"><b id="exptext">REIKI can never do damage in any way, since it only flows in the quantities necessary for the recipient.
+                        The Usui System of REIKI is not only the most simple and natural healing method we know of, but it is also the most effective way of transferring this Universal Life energy. Once a person has been opened up to become a "channel" for REIKI concentrated life energy will flow through hands on its own accord and will retain this ability for the rest of his life</b></p>
+                    <header class="major">
+                        <h2><b style="background-color:brown">What Reiki is not</b></h2>
+                    </header>
+                    <p style="margin-bottom: 1%;text-align: justify;"><b id="exptext">REIKI is not a religion, as it holds no creed or doctrine. It has nothing to do with spiritualism or occult in any shape or form. It has nothing to do with the calling up of ghosts or demons, nor is it concerned with hypnosis or any other kind of psychological technique. To practice REIKI no special kind of faith or belief is required.In REIKI treatment, use is made solely of natural but concentrated form of cosmic energy.</b></p>
+                </div>
+            </section>  
 
-					<ul class="actions special">
-					<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-					<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-					<script>
-						(function() {
-  							var target = document.currentScript;
-  							window.addEventListener('load', function() {
-    						calendar.schedulingButton.load({
-     						url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1cbK5ymG9DAQdDMXq4g3Q9gPGg7F8PtIDDIHVLgayeiK4Ig9aX4IzZ82PiCiyJqCFYtk9Ob_s6?gv=true',
-      						color: '#FF6500',
-      						label: 'Book an appointment',
-      						target,
-					    	});
-					  		});
-						})();
-					</script>
-					</ul>
-				</div>
-			</section>
+            <section id="five" class="main style1 special">
+                <div class="container">
+                    <header class="major">
+                        <h2><b>Reiki Experiences</b></h2>
+                    </header>       
+                    <p id="experience-margin;"><b id="exptext" style="color:black">There are thousands of people who have learnt Reiki and have got various experiences. It is not possible to record all those experiences. However, a few of those experiences have been shared below to highlight various aspects of Rieki.</b></p>
 
+                    <!-- Responsive Testimonial Carousel -->
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                        <!-- Carousel Inner Slides -->
+                        <div class="carousel-inner px-md-5">
+                            <div class="carousel-item active">
+                                <div class="testimonial-card">
+                                    <p class="testimonial-text">&#8226; "My experience with reiki has been other worldly. After practicing reiki I have realized that I am a part of this infinite flow and I have been spiritually asleep my whole life. My life is now constantly filled with joy, peace, happiness, emotional and physical well-being. For this I would like to thank Reiki energy, my masters Jaswinder Singh ji, Dr. Karanapal Sir ji, Dr. Mikao Usui ji and all the other enlightened beings who are always with me."</p>
+                                    <span class="testimonial-author">- By Inderpreet Singh</span>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <p class="testimonial-text">&#8226; "Learning Reiki has been a transitional journey for me. It helped me heal physically and mentally. Also, Reiki gave me a new perspective towards life, attitude of gratitude."</p>
+                                    <span class="testimonial-author">- By Guneev Singh Batth</span>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <p class="testimonial-text">&#8226; "Reiki has given me a profound sense of purpose and understanding of my existence. Also, Reiki helped me to grow spiritually and filled my life with joy, blissfulness and happiness."</p>
+                                    <span class="testimonial-author">- By Navjot Singh Sarwara</span>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <p class="testimonial-text">&#8226; "Since I have learned reiki, my way of thinking and living life has been changed, that helps me to grow internally and externally as well as help me to stay calm in harsh conditions. Thank you Sir “Jaswinder Singh Sidhu”"</p>
+                                    <span class="testimonial-author">- By Arshdeep Singh</span>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <p class="testimonial-text">&#8226; "Reiki has healed me emotionally, mentally and physically. I experience more stability and calmness in my everyday life."</p>
+                                    <span class="testimonial-author">- By Bhavleen Arora</span>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <p class="testimonial-text">&#8226; "After learning Reiki, I realized how unaware I was about the reality of life and the meaning of true joy. I got a tool to explore my inner self and a method to clean myself on all three aspects i.e. physical, mental and spiritual. I am grateful to Jaswinder Singh Sidhu for the gift of Reiki. Humble regards to Karanpal Singh Sandhu, and Dr. Mikao Usui."</p>
+                                    <span class="testimonial-author">- By Manjeet Singh</span>
+                                </div>
+                            </div>
+                        </div>
 
-		<!-- Footer -->
-			<section id="footer">
-				<ul class="copyright">
-					<li id="headtext">&copy;2024</li><li><a href="https://reikiholistichands.com/" id="headtext">Centre of Holistic Healings Art.</a></li>
-				</ul>
-			</section>
+                        <!-- Centered White Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"crossorigin="anonymous"></script>
+                        <!-- Lowered Indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
+                    </div>
 
-	</body>
+                </div>
+            </section>      
+
+            <section>
+                <span id="printrequest" style="text-align: center;display: block; background-color: brown; margin-top: 2em;"><b style="color:white">Printed book will be provided on request.</b></span>                   
+            </section>
+
+        <!-- Four -->
+            <section id="six" class="main style1 special">
+                <div class="container">
+                    <header class="major">
+                        <h2><b>Contact Us</b></h2>
+                    </header>
+                    <p id="contact">Feel free to reach out if you have any further inquires.<br>
+                    <i class="fas fa-phone"></i> Phone: +1 (403) 970-9104<br>
+					<i class="fab fa-youtube"></i> Youtube: <a href="https://www.youtube.com/@reikiholistichands">reikiholistichands</a><br>
+                    <i class="fas fa-envelope"></i> Email: reikiholistichands@gmail.com<br>
+                    <i class="fas fa-map-pin"></i> Address: 390 Redstone Blvd NE, Calgary, AB T3N 1K2</p>
+
+                    <ul class="actions special">
+                    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+                    <script>
+                        (function() {
+                            var target = document.currentScript;
+                            window.addEventListener('load', function() {
+                            calendar.schedulingButton.load({
+                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1cbK5ymG9DAQdDMXq4g3Q9gPGg7F8PtIDDIHVLgayeiK4Ig9aX4IzZ82PiCiyJqCFYtk9Ob_s6?gv=true',
+                            color: '#FF6500',
+                            label: 'Book an appointment',
+                            target,
+                            });
+                            });
+                        })();
+                    </script>
+                    </ul>
+                </div>
+            </section>
+
+        <!-- Footer -->
+            <section id="footer">
+                <ul class="copyright">
+                    <li id="headtext">&copy;2024</li><li><a href="https://reikiholistichands.com/" id="headtext">Centre of Holistic Healings Art.</a></li>
+                </ul>
+            </section>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
 </html>
