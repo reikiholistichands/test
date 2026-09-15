@@ -1,0 +1,518 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>About Reiki | Centre of Holistic Healings Art</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.PNG" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #1e0036 0%, #3a0066 50%, #6a11cb 100%);
+            --hero-overlay: linear-gradient(135deg, rgba(20, 5, 38, 0.88) 0%, rgba(46, 12, 88, 0.82) 50%, rgba(106, 17, 203, 0.75) 100%);
+            --accent-gradient: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);
+            --bg-light: #f8f9fa;
+            --text-dark: #111111;
+            --violet-color: #6a11cb;
+            --navbar-height: 65px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding-top: var(--navbar-height);
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            overflow-x: hidden;
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        /* --- FIXED NAVBAR --- */
+        .navbar {
+            background: var(--primary-gradient);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            width: 100% !important;
+            height: var(--navbar-height);
+            z-index: 99999 !important;
+            margin: 0;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            font-weight: 600;
+            font-size: 1rem;
+            white-space: normal;
+            display: flex;
+            align-items: center;
+            max-width: calc(100% - 50px);
+        }
+
+        .nav-logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ffb199;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-brand .nav-logo {
+                display: none;
+            }
+
+            .navbar-collapse {
+                position: fixed;
+                top: var(--navbar-height);
+                right: -100%;
+                width: 100%;
+                height: calc(100vh - var(--navbar-height));
+                background: linear-gradient(180deg, rgba(30, 0, 54, 0.98) 0%, rgba(106, 17, 203, 0.95) 100%);
+                backdrop-filter: blur(10px);
+                display: flex !important;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                transition: right 0.35s ease-in-out;
+                z-index: 99998;
+                padding: 20px;
+                text-align: center;
+                overflow-y: auto;
+            }
+
+            .navbar-collapse.show {
+                right: 0;
+            }
+
+            .mobile-menu-header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            .mobile-menu-logo {
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid #ffb199;
+                box-shadow: 0 4px 15px rgba(255, 8, 68, 0.4);
+                background-color: #ffffff;
+                padding: 2px;
+                margin-bottom: 8px;
+            }
+
+            .mobile-menu-title {
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+
+            .navbar-nav {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                margin: 0;
+            }
+
+            .nav-item {
+                margin: 6px 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-link {
+                font-size: 1.1rem !important;
+                font-weight: 600;
+                color: #ffffff !important;
+                display: block;
+                text-align: center;
+                padding: 8px 0;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .mobile-menu-header {
+                display: none;
+            }
+            .nav-link {
+                color: #ffffff !important;
+                font-weight: 500;
+                transition: color 0.3s ease;
+            }
+            .nav-link:hover {
+                color: #ffb199 !important;
+            }
+        }
+
+        /* --- REIKI CONTENT PAGE STYLING MATCHING INDEX.HTML --- */
+        .reiki-hero {
+            background: var(--hero-overlay), 
+                        url('images/center10.JPG') center/cover no-repeat;
+            color: #ffffff;
+            padding: 70px 15px 80px;
+            text-align: center;
+            position: relative;
+        }
+
+        .reiki-hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .reiki-hero p {
+            font-size: 1.05rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #e2ff07;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        .content-section {
+            padding: 60px 0;
+            background: #ffffff;
+        }
+
+        .content-section.alt-bg {
+            background: linear-gradient(180deg, #f8f5ff 0%, #f3ebfc 50%, #faf0fc 100%);
+        }
+
+        .custom-card {
+            background: #ffffff;
+            border: 1px solid #e2d4f3;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 6px 18px rgba(106, 17, 203, 0.05);
+            height: 100%;
+        }
+
+        .section-title {
+            color: #1e0036;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--violet-color);
+        }
+
+        .text-justify {
+            text-align: justify;
+            color: #444444;
+            font-size: 0.98rem;
+            line-height: 1.7;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background: #fff5f5;
+            border-left: 5px solid #ff0844;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 4px 12px rgba(255, 8, 68, 0.05);
+        }
+
+        .warning-box h5 {
+            color: #d90429;
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-bottom: 10px;
+            font-family: 'Cinzel', serif;
+        }
+
+        /* Benefits Grid */
+        .benefit-badge {
+            background: #ffffff;
+            border: 1px solid #e2d4f3;
+            border-radius: 50px;
+            padding: 12px 20px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #1e0036;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 3px 10px rgba(106, 17, 203, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .benefit-badge:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #ffffff;
+            border-color: #6a11cb;
+            box-shadow: 0 6px 15px rgba(106, 17, 203, 0.2);
+        }
+
+        .benefit-badge i {
+            color: #ff0844;
+            font-size: 1.05rem;
+        }
+
+        .benefit-badge:hover i {
+            color: #ffb199;
+        }
+
+        .btn-custom-main {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #ffffff !important;
+            border: none;
+            box-shadow: 0 4px 15px rgba(106, 17, 203, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom-main:hover {
+            background: linear-gradient(135deg, #ff0844 0%, #ff5858 100%);
+            box-shadow: 0 6px 20px rgba(255, 8, 68, 0.4);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Header Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a class="navbar-brand m-0" href="index.html">
+                <img src="images/logo.PNG" alt="Logo" class="nav-logo" onerror="this.src='https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=100&q=80'">
+                <span>Centre of Holistic Healings Art</span>
+            </a>
+            <button class="navbar-toggler text-white border-0 shadow-none" type="button" onclick="toggleMobileMenu()" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars fs-3" id="menuToggleIcon"></i>
+            </button>
+
+            <div class="navbar-collapse" id="mobileNavMenu">
+                <div class="mobile-menu-header">
+                    <img src="images/logo.PNG" alt="Logo" class="mobile-menu-logo" onerror="this.src='https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=150&q=80'">
+                    <div class="mobile-menu-title">Centre of Holistic Healings Art</div>
+                </div>
+
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="center-tour.html">Center Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Student Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#reviews">Google Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about-preview">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header matching index.html hero style -->
+    <header class="reiki-hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 col-xl-9">
+                    <h1>About Reiki and Its History</h1>
+                    <p>Discover the universal life force energy that heals body, mind, and soul.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section: History & Origin -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="custom-card">
+                        <h3 class="section-title">Understanding Reiki</h3>
+                        <p class="text-justify mb-4">
+                            Reiki is a Japanese word where "Rei" means universal life force and "Ki" means energy. It is this energy with which we are born and live throughout the life. This Universal life Force Energy is pervasive throughout the entire Universe and has the potential to heal all living beings and even non-living things. Reiki makes a person healthy by affecting his all the three aspects i.e. Body, Mind and Soul.
+                        </p>
+                        <p class="text-justify mb-4">
+                            Reiki is not a Religion. It has nothing to do with calling Spirits, Black magic or Hypnosis. Any person whether educated or uneducated, of any profession can learn Reiki. The founder of Reiki was from Japan. He imparted this education of Reiki to the people and established a Reiki channel. Shortly before his death, Dr. Usui gave this responsibility to carry forward this method of Reiki healing to his Disciple Dr. Chujiro Hayashi. In 1938, Dr. Hayashi granted Mastership to Takata Hawayo and made her a Reiki Master. In India, the knowledge of Reiki was introduced by Dr. Poula Horan in 1986 and Dr. Karanpal Singh Sandhu was the one to become the first Reiki Master in the whole North India. Due to its simplicity, the knowledge of Reiki is gaining popularity all over the world and the number of people learning Reiki is increasing day by day.
+                        </p>
+
+                        <!-- Distance Warning Box -->
+                        <div class="warning-box">
+                            <h5><i class="fa-solid fa-triangle-exclamation me-2"></i> IMPORTANT NOTE</h5>
+                            <p class="mb-0 text-dark" style="font-size: 0.95rem; line-height: 1.7;">
+                                Reiki healing can be done from distance but it is not possible to learn Reiki from distance or over the internet (because initiation process which is performed by a true Reiki Master is possible only if Reiki learner is physically present). Beware of such wrong persons who claim to teach Reiki from distance or over the internet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="content-section alt-bg">
+        <div class="container">
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-10 text-center">
+                    <h2 class="section-title d-inline-block">Benefits of Reiki</h2>
+                    <p class="text-muted mt-2">Experience total relaxation, healing, and holistic balance.</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="custom-card mb-4">
+                        <p class="text-justify mb-4">
+                            One of the greatest benefits of REIKI is self-treatment. Once a person is attuned, he or she need only have intention to do REIKI on him/her self or others, and the energy is immediately drawn through on its own accord with no further intense focus from the Practitioner needed. It is an extremely effective technique for total relaxation and stress release. One is filled with a sensation of peace, vitality and joy, often combined with a pleasant feeling of security and of being enclosed in a fine sheath of energy. Treating oneself also helps to release withheld emotions and energy blocks. REIKI works holistically. REIKI not only can effect changes in the chemical structure of the body by helping to regenerate organs and rebuild tissue and bones, it also helps create a balance on the mental level. REIKI is a wonderful tool to help one develop conscious awareness, the very key to enlightenment.
+                        </p>
+                        <p class="text-justify mb-4">
+                            REIKI affects each individual in a very personal way—the result being determined by the needs of the person being treated. Some common denominators which seem to result in most treatments are:
+                        </p>
+
+                        <!-- Key Benefits Grid -->
+                        <div class="row g-3 mt-3">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="benefit-badge">
+                                     Balances Energy
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="benefit-badge">
+                                     Increases Creativity
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="benefit-badge">
+                                     Helps Release Emotions
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="benefit-badge">
+                                     Release Stress
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="benefit-badge">
+                                     Amplifies Energy
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="benefit-badge">
+                                    Works on Causal Level
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="benefit-badge justify-content-center">
+                                     Heals Holistically
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-justify mt-4 mb-0">
+                            REIKI can never do damage in any way, since it only flows in the quantities necessary for the recipient. The Usui System of REIKI is not only the most simple and natural healing method we know of, but it is also the most effective way of transferring this Universal Life energy. Once a person has been opened up to become a "channel" for REIKI, concentrated life energy will flow through hands on its own accord and will retain this ability for the rest of his life.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Reiki Is Not Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="custom-card">
+                        <h3 class="section-title">What Reiki Is Not</h3>
+                        <p class="text-justify mb-0">
+                            REIKI is not a religion, as it holds no creed or doctrine. It has nothing to do with spiritualism or occult in any shape or form. It has nothing to do with the calling up of ghosts or demons, nor is it concerned with hypnosis or any other kind of psychological technique. To practice REIKI no special kind of faith or belief is required. In REIKI treatment, use is made solely of a natural but concentrated form of cosmic energy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Return Button matching index.html button styling -->
+            <div class="text-center mt-5">
+                <a href="index.html" class="btn btn-custom-main rounded-pill px-4 py-2 font-weight-bold">
+                    <i class="fa-solid fa-arrow-left me-2"></i> Return to Main Page
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <p class="mb-0 small">&copy; <a href="https://reikiholistichands.com/" class="text-white text-decoration-none">Centre of Holistic Healings Art.</a> All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('mobileNavMenu');
+            const icon = document.getElementById('menuToggleIcon');
+            navMenu.classList.toggle('show');
+            if (navMenu.classList.contains('show')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>About Me & My Gurus | Centre of Holistic Healings Art</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.PNG" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #1e0036 0%, #3a0066 50%, #6a11cb 100%);
+            --light-about-gradient: linear-gradient(135deg, #f3f0ff 0%, #e8f0fe 50%, #fdfbfb 100%);
+            --navbar-height: 65px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            padding-top: var(--navbar-height);
+            background-color: #f8f9fa;
+            overflow-x: hidden;
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* --- FIXED NAVBAR --- */
+        .navbar {
+            background: var(--primary-gradient);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            width: 100% !important;
+            height: var(--navbar-height);
+            z-index: 99999 !important;
+            margin: 0;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            font-weight: 600;
+            font-size: 1rem;
+            white-space: normal;
+            display: flex;
+            align-items: center;
+            max-width: calc(100% - 50px);
+        }
+
+        .nav-logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ffb199;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        /* Mobile Overlay Menu */
+        @media (max-width: 991.98px) {
+            .navbar-brand .nav-logo {
+                display: none;
+            }
+
+            .navbar-collapse {
+                position: fixed;
+                top: var(--navbar-height);
+                right: -100%;
+                width: 100%;
+                height: calc(100vh - var(--navbar-height));
+                background: linear-gradient(180deg, rgba(30, 0, 54, 0.98) 0%, rgba(106, 17, 203, 0.95) 100%);
+                backdrop-filter: blur(10px);
+                display: flex !important;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                transition: right 0.35s ease-in-out;
+                z-index: 99998;
+                padding: 20px;
+                text-align: center;
+                overflow-y: auto;
+            }
+
+            .navbar-collapse.show {
+                right: 0;
+            }
+
+            .mobile-menu-header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            .mobile-menu-logo {
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid #ffb199;
+                box-shadow: 0 4px 15px rgba(255, 8, 68, 0.4);
+                background-color: #ffffff;
+                padding: 2px;
+                margin-bottom: 8px;
+            }
+
+            .mobile-menu-title {
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+
+            .navbar-nav {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                margin: 0;
+            }
+
+            .nav-item {
+                margin: 6px 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-link {
+                font-size: 1.1rem !important;
+                font-weight: 600;
+                color: #ffffff !important;
+                display: block;
+                text-align: center;
+                padding: 8px 0;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .mobile-menu-header {
+                display: none;
+            }
+            .nav-link {
+                color: #ffffff !important;
+                font-weight: 500;
+                transition: color 0.3s ease;
+            }
+            .nav-link:hover {
+                color: #ffb199 !important;
+            }
+        }
+
+        /* --- PAGE CONTENT STYLES --- */
+        .about-me-section {
+            background: var(--light-about-gradient);
+            padding: 60px 0;
+        }
+
+        .profile-img {
+            border-radius: 24px;
+            box-shadow: 0 15px 35px rgba(106, 17, 203, 0.2);
+            border: 4px solid #ffffff;
+            width: 100%;
+            max-width: 380px;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+        }
+
+        .bio-card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+            border-left: 6px solid #6a11cb;
+        }
+
+        .guru-card-border-wrapper {
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 35%, #ffc3a0 70%, #ffafbd 100%);
+            padding: 3px;
+            border-radius: 22px;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .guru-card-border-wrapper:hover {
+            transform: translateY(-5px);
+        }
+
+        .guru-card {
+            background: #ffffff;
+            padding: 22px 15px;
+            border-radius: 20px;
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .guru-img-wrapper {
+            width: 100%;
+            max-width: 180px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid #6a11cb;
+            aspect-ratio: 3 / 4;
+        }
+
+        .guru-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .guru-name {
+            color: #1e0036;
+            font-weight: 700;
+        }
+
+        .guru-role {
+            color: #ff0844;
+            font-weight: 600;
+            font-size: 0.85rem;
+            background: rgba(255, 8, 68, 0.1);
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a class="navbar-brand m-0" href="index.html">
+                <img src="images/logo.PNG" alt="Logo" class="nav-logo" onerror="this.src='https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=100&q=80'">
+                <span>Centre of Holistic Healings Art</span>
+            </a>
+            <button class="navbar-toggler text-white border-0 shadow-none" type="button" onclick="toggleMobileMenu()" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars fs-3" id="menuToggleIcon"></i>
+            </button>
+
+            <div class="navbar-collapse" id="mobileNavMenu">
+                <div class="mobile-menu-header">
+                    <img src="images/logo.PNG" alt="Logo" class="mobile-menu-logo" onerror="this.src='https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=150&q=80'">
+                    <div class="mobile-menu-title">Centre of Holistic Healings Art</div>
+                </div>
+
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="center-tour.html">Center Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Student Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#reviews">Google Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about-preview">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <section class="about-me-section">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold" style="color: #1e0036;">About Me</h2>
+            <div class="row align-items-center g-4 justify-content-center">
+                <div class="col-12 col-lg-5 text-center">
+                    <img src="jaswinder-sidhu.jpg" alt="Jaswinder Singh Sidhu" class="profile-img img-fluid" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80'">
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="bio-card">
+                        <h3 class="fw-bold text-primary fs-3 mb-1">Jaswinder Singh Sidhu</h3>
+                        <h6 class="text-secondary fw-bold mb-4 fs-6">(Traditional Reiki Master and Crystal Master)</h6>
+                        <p class="mb-0">
+                            I, Jaswinder Singh Sidhu, received this gift of Reiki from Dr. Karanpal Singh Sandhu in the year of 2005. In November 2011, I was blessed with Reiki Mastership by my Guru Dr. Karanpal Singh Sandhu. I have been teaching various methods of natural healing since 2012 in India. Presently, I am residing in Canada, as per the divine wish to spread the knowledge of Reiki far and wide.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Gurus Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold" style="color: #1e0036;">My Masters</h2>
+            <div class="row g-4 justify-content-center">
+                
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="guru-card-border-wrapper">
+                        <div class="guru-card">
+                            <div class="guru-img-wrapper">
+                                <img src="images/pic13.png" alt="Dr. Mikao Usui" onerror="this.src='https://via.placeholder.com/180x220?text=Dr.+Mikao+Usui'">
+                            </div>
+                            <div class="guru-name">Dr. Mikao Usui</div>
+                            <div class="guru-role">Reiki Founder</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="guru-card-border-wrapper">
+                        <div class="guru-card">
+                            <div class="guru-img-wrapper">
+                                <img src="images/pic01.png" alt="Dr. Chujiro Hayashi" onerror="this.src='https://via.placeholder.com/180x220?text=Dr.+Chujiro+Hayashi'">
+                            </div>
+                            <div class="guru-name">Dr. Chujiro Hayashi</div>
+                            <div class="guru-role">1st Reiki Disciple</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="guru-card-border-wrapper">
+                        <div class="guru-card">
+                            <div class="guru-img-wrapper">
+                                <img src="images/pic02.png" alt="Dr. Takata Hawayo" onerror="this.src='https://via.placeholder.com/180x220?text=Dr.+Takata+Hawayo'">
+                            </div>
+                            <div class="guru-name">Dr. Takata Hawayo</div>
+                            <div class="guru-role">2nd Reiki Disciple</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="guru-card-border-wrapper">
+                        <div class="guru-card">
+                            <div class="guru-img-wrapper">
+                                <img src="images/pic12.png" alt="Dr. Karanpal Singh Sandhu" onerror="this.src='https://via.placeholder.com/180x220?text=Dr.+Karanpal+Singh+Sandhu'">
+                            </div>
+                            <div class="guru-name">Dr. Karanpal Singh Sandhu</div>
+                            <div class="guru-role">My Beloved Master</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="index.html" class="btn btn-primary rounded-pill px-4">
+                    <i class="fa-solid fa-arrow-left me-2"></i> Return to Main Page
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <p class="mb-0 small">&copy; <a href="https://reikiholistichands.com/" class="text-white text-decoration-none">Centre of Holistic Healings Art.</a> All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('mobileNavMenu');
+            const icon = document.getElementById('menuToggleIcon');
+            navMenu.classList.toggle('show');
+            if (navMenu.classList.contains('show')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+    </script>
+</body>
+</html>

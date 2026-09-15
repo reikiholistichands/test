@@ -1,0 +1,770 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>All Services | Centre of Holistic Healings Art</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.PNG" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Calendar Appointment Scheduling CSS -->
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #1e0036 0%, #3a0066 50%, #6a11cb 100%);
+            --hero-overlay: linear-gradient(135deg, rgba(20, 5, 38, 0.88) 0%, rgba(46, 12, 88, 0.82) 50%, rgba(106, 17, 203, 0.75) 100%);
+            --btn-glow: linear-gradient(135deg, #f857a6 0%, #ff5858 100%);
+            --bg-light: #f8f9fa;
+            --text-dark: #111111;
+            --violet-color: #6a11cb;
+            --navbar-height: 65px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding-top: var(--navbar-height);
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            overflow-x: hidden;
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container, .container-fluid {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .hur54b {
+            padding-top: 8px !important;
+            padding-bottom: 8px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .Xfsokf {
+            top: 73px !important;
+        }
+
+        /* --- FIXED NAVBAR --- */
+        .navbar {
+            background: var(--primary-gradient);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            width: 100% !important;
+            height: var(--navbar-height);
+            z-index: 99999 !important;
+            margin: 0;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            font-weight: 600;
+            font-size: 1rem;
+            white-space: normal;
+            display: flex;
+            align-items: center;
+            max-width: calc(100% - 50px);
+        }
+
+        .nav-logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ffb199;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        /* Mobile Overlay Menu */
+        @media (max-width: 991.98px) {
+            .navbar-brand .nav-logo {
+                display: none;
+            }
+
+            .navbar-collapse {
+                position: fixed;
+                top: var(--navbar-height);
+                right: -100%;
+                width: 100%;
+                height: calc(100vh - var(--navbar-height));
+                background: linear-gradient(180deg, rgba(30, 0, 54, 0.98) 0%, rgba(106, 17, 203, 0.95) 100%);
+                backdrop-filter: blur(10px);
+                display: flex !important;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                transition: right 0.35s ease-in-out;
+                z-index: 99998;
+                padding: 20px;
+                text-align: center;
+                overflow-y: auto;
+            }
+
+            .navbar-collapse.show {
+                right: 0;
+            }
+
+            .mobile-menu-header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            .mobile-menu-logo {
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid #ffb199;
+                box-shadow: 0 4px 15px rgba(255, 8, 68, 0.4);
+                background-color: #ffffff;
+                padding: 2px;
+                margin-bottom: 8px;
+            }
+
+            .mobile-menu-title {
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+
+            .navbar-nav {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                margin: 0;
+            }
+
+            .nav-item {
+                margin: 6px 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-link {
+                font-size: 1.1rem !important;
+                font-weight: 600;
+                color: #ffffff !important;
+                display: block;
+                text-align: center;
+                padding: 8px 0;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .mobile-menu-header {
+                display: none;
+            }
+            .nav-link {
+                color: #ffffff !important;
+                font-weight: 500;
+                transition: color 0.3s ease;
+            }
+            .nav-link:hover {
+                color: #ffb199 !important;
+            }
+        }
+
+        /* --- PAGE HEADER --- */
+        .page-header-section {
+            background: var(--hero-overlay), 
+                        url('images/center10.JPG') center/cover no-repeat;
+            color: white;
+            padding: 60px 15px;
+            text-align: center;
+        }
+
+        .page-header-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: #ffffff;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .page-header-subtitle {
+            color: #e2ff07;
+            font-size: 1.1rem;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+        }
+
+        /* --- SERVICES SECTION --- */
+        .services-wrapper-section {
+            background: linear-gradient(180deg, #f8f5ff 0%, #f3ebfc 50%, #faf0fc 100%);
+            padding: 60px 0 80px;
+            position: relative;
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .services-header .main-heading {
+            font-family: 'Alex Brush', cursive;
+            font-size: 4.8rem;
+            color: #1e0036;
+            margin-bottom: 0;
+            line-height: 1;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+        }
+
+        .services-header .sub-heading {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            letter-spacing: 4px;
+            color: #6a11cb;
+            font-weight: 600;
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+
+        .services-header .lotus-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .services-header .lotus-divider::before,
+        .services-header .lotus-divider::after {
+            content: '';
+            width: 100px;
+            height: 1px;
+            background: #d1b8eb;
+        }
+
+        .services-header .lotus-divider i {
+            color: #6a11cb;
+            font-size: 1.2rem;
+        }
+
+        .service-card-v2 {
+            background: #ffffff;
+            border-radius: 20px;
+            border: 1px solid #e2d4f3;
+            padding: 14px;
+            box-shadow: 0 6px 18px rgba(106, 17, 203, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .service-card-v2:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(106, 17, 203, 0.15);
+            border-color: #6a11cb;
+        }
+
+        .service-card-v2 .card-img-holder {
+            width: 42%;
+            aspect-ratio: 1 / 1;
+            border-radius: 14px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .service-card-v2 .card-img-holder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 14px;
+        }
+
+        .service-card-v2 .card-img-holder img.aura-img-fix {
+            object-position: top center;
+        }
+
+        .service-card-v2 .card-body-content {
+            width: 58%;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .service-card-v2 .service-name {
+            font-family: 'Cinzel', serif;
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #1e0036;
+            line-height: 1.25;
+            margin-bottom: 10px;
+        }
+
+        .service-card-v2 .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .service-card-v2 .detail-icon {
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6a11cb;
+            font-size: 1.05rem;
+        }
+
+        .service-card-v2 .price-text {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #111111;
+        }
+
+        .service-card-v2 .duration-text {
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: #555555;
+        }
+
+        .btn-book-service {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #ffffff !important;
+            font-size: 0.82rem;
+            font-weight: 600;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-top: 8px;
+            align-self: flex-start;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(106, 17, 203, 0.2);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-book-service:hover {
+            background: linear-gradient(135deg, #ff0844 0%, #ff5858 100%);
+            box-shadow: 0 4px 12px rgba(255, 8, 68, 0.3);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 576px) {
+            .service-card-v2 {
+                flex-direction: column;
+                text-align: center;
+            }
+            .service-card-v2 .card-img-holder {
+                width: 100%;
+                max-width: 200px;
+                margin-bottom: 15px;
+            }
+            .service-card-v2 .card-body-content {
+                width: 100%;
+                padding-left: 0;
+                align-items: center;
+            }
+            .btn-book-service {
+                align-self: center;
+            }
+        }
+
+        /* --- CONTACT SECTION STYLING --- */
+        .contact-list-text {
+            font-size: 1.05rem;
+            color: #222222;
+            line-height: 2;
+        }
+        .contact-list-text a {
+            color: var(--violet-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .contact-list-text a:hover {
+            color: #ff0844;
+            text-decoration: underline;
+        }
+        .contact-icon {
+            width: 28px;
+            color: var(--violet-color);
+            font-size: 1.25rem;
+            text-align: center;
+            margin-right: 12px;
+        }
+
+        #calendar-booking-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Header Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a class="navbar-brand m-0" href="index.html">
+                <img src="images/logo.PNG" alt="Logo" class="nav-logo" onerror="this.src='https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=100&q=80'">
+                <span>Centre of Holistic Healings Art</span>
+            </a>
+            <button class="navbar-toggler text-white border-0 shadow-none" type="button" onclick="toggleMobileMenu()" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars fs-3" id="menuToggleIcon"></i>
+            </button>
+
+            <div class="navbar-collapse" id="mobileNavMenu">
+                <div class="mobile-menu-header">
+                    <img src="images/logo.PNG" alt="Logo" class="mobile-menu-logo" onerror="this.src='https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=150&q=80'">
+                    <div class="mobile-menu-title">Centre of Holistic Healings Art</div>
+                </div>
+
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#what-we-teach">What We Teach</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="center-tour.html">Center Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Student Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="google-review.html">Google Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-preview">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header Section -->
+    <header class="page-header-section">
+        <div class="container">
+            <h1 class="page-header-title mb-2">Our Complete Services</h1>
+            <p class="page-header-subtitle mb-0">Explore our comprehensive range of holistic healing packages and spiritual sessions.</p>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services-wrapper-section">
+        <div class="container">
+            <div class="services-header">
+                <h2 class="main-heading">All Services</h2>
+                <div class="sub-heading">HEALING FOR A BETTER TOMORROW</div>
+                <div class="lotus-divider">
+                    <i class="fa-solid fa-spa"></i>
+                </div>
+            </div>
+
+            <div class="row g-3 g-md-4">
+                <!-- Service Cards -->
+                <div class="col-12 col-lg-6">
+                    <div class="service-card-v2">
+                        <div class="card-img-holder">
+                            <img src="images/service1.png" alt="In-Person Reiki Healing">
+                        </div>
+                        <div class="card-body-content">
+                            <div class="service-name">In-Person Reiki Healing</div>
+                            <div class="detail-item"><div class="price-text">$60</div></div>
+                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">30 minutes</div></div>
+                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="service-card-v2">
+                        <div class="card-img-holder">
+                            <img src="images/service3.png" alt="In-Person Healing with Reiki & Crystals" onerror="this.src='https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="card-body-content">
+                            <div class="service-name">In-Person Healing with Reiki & Crystals</div>
+                            <div class="detail-item"><div class="price-text">$90</div></div>
+                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">45 minutes</div></div>
+                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="service-card-v2">
+                        <div class="card-img-holder">
+                            <img src="images/service2.png" alt="Healing with Counseling">
+                        </div>
+                        <div class="card-body-content">
+                            <div class="service-name">Healing with Counseling</div>
+                            <div class="detail-item"><div class="price-text">$99</div></div>
+                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">1 hour</div></div>
+                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="service-card-v2">
+                        <div class="card-img-holder">
+                            <img src="images/service4.png" alt="Family Group Healing for 3 People">
+                        </div>
+                        <div class="card-body-content">
+                            <div class="service-name">Family Group Healing for 3 People</div>
+                            <div class="detail-item"><div class="price-text">$120</div></div>
+                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">1 hour</div></div>
+                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="service-card-v2">
+                        <div class="card-img-holder">
+                            <img src="images/service5.png" alt="Family Group Healing with Counseling">
+                        </div>
+                        <div class="card-body-content">
+                            <div class="service-name">Family Group Healing with Counseling</div>
+                            <div class="detail-item"><div class="price-text">$199</div></div>
+                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">90 minutes</div></div>
+                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="service-card-v2">
+                        <div class="card-img-holder">
+                            <img src="images/service6.png" alt="Advanced Chakra Balancing with 7 Special Crystals" onerror="this.src='https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="card-body-content">
+                            <div class="service-name">Advanced Chakra Balancing with 7 Special Crystals</div>
+                            <div class="detail-item"><div class="price-text">$99</div></div>
+                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">45 minutes</div></div>
+                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="service-card-v2">
+                        <div class="card-img-holder">
+                            <img src="images/service7.png" alt="Advanced Astral & Reiki Healing">
+                        </div>
+                        <div class="card-body-content">
+                            <div class="service-name">Advanced Astral & Reiki Healing</div>
+                            <div class="detail-item"><div class="price-text">$120</div></div>
+                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">90 minutes</div></div>
+                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="service-card-v2">
+                        <div class="card-img-holder">
+                            <img src="images/service8.png" alt="Advanced Healing with Astral & Crystals" onerror="this.src='https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="card-body-content">
+                            <div class="service-name">Advanced Healing with Astral & Crystals</div>
+                            <div class="detail-item"><div class="price-text">$180</div></div>
+                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">90 minutes</div></div>
+                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="service-card-v2">
+                        <div class="card-img-holder">
+                            <img src="images/service10.png" alt="Advanced Healing with Color Projection at the Astral Level" onerror="this.src='https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="card-body-content">
+                            <div class="service-name">Advanced Healing with Color Projection at the Astral Level</div>
+                            <div class="detail-item"><div class="price-text">$230</div></div>
+                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">90 minutes</div></div>
+                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="service-card-v2">
+                        <div class="card-img-holder">
+                            <img src="images/service9.png" class="aura-img-fix" alt="Aura Reading & Reflection by The Master" onerror="this.src='https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="card-body-content">
+                            <div class="service-name">Aura Reading & Reflection by The Master</div>
+                            <div class="detail-item"><div class="price-text">$70</div></div>
+                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="service-card-v2">
+                        <div class="card-img-holder">
+                            <img src="images/service11.png" alt="Advanced Healing with Color Projection at the Astral Level" onerror="this.src='https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="card-body-content">
+                            <div class="service-name">Distance Healing</div>
+                            <div class="detail-item"><div class="price-text">$200 - 1 Week Healing</div></div>
+                            <div class="detail-item"><div class="price-text">$350 - 2 Week Healing</div></div>
+                            <div class="detail-item"><div class="price-text">$550 - 3 Week Healing</div></div>
+                            <div class="detail-item"><div class="price-text">$650 - 4 Week Healing</div></div>
+                            <!-- <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">90 minutes</div></div> -->
+                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Services Section -->
+    <section id="special-services" class="services-wrapper-section pt-0">
+        <div class="container">
+            <div class="services-header">
+                <h2 class="main-heading">Special Services</h2>
+                <div class="sub-heading">EXCLUSIVE HEALING OFFERINGS</div>
+                <div class="lotus-divider">
+                    <i class="fa-solid fa-spa"></i>
+                </div>
+            </div>
+
+            <div class="row g-3 g-md-4">
+                <!-- Special Service 1: Energy Cleansing for Your Home -->
+                <div class="col-12 col-lg-6">
+                    <div class="service-card-v2">
+                        <div class="card-img-holder">
+                            <img src="images/1000000868.png" alt="Energy Cleansing for Your Home" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="card-body-content">
+                            <div class="service-name">Energy Cleansing for Your Home</div>
+                            <div class="detail-item"><div class="price-text">$500 + Traveling Charges</div></div>
+                            <div class="detail-item"><div class="detail-icon"><i class="fa-solid fa-house-chimney"></i></div><div class="duration-text">In-person home visit by The Master</div></div>
+                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Service 2: Healing for Post-Traumatic Stress -->
+                <div class="col-12 col-lg-6">
+                    <div class="service-card-v2">
+                        <div class="card-img-holder">
+                            <img src="images/ptsd.png" alt="Healing for Post-Traumatic Stress" onerror="this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="card-body-content">
+                            <div class="service-name">Healing for Post-Traumatic Stress</div>
+                            <div class="detail-item"><div class="price-text">$90</div></div>
+                            <div class="detail-item"><div class="detail-icon"><i class="fa-regular fa-clock"></i></div><div class="duration-text">60 minutes</div></div>
+                            <a href="#contact" class="btn-book-service"><i class="fa-solid fa-calendar-check me-1"></i> Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-4 fw-bold" style="color: #1e0036;">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="contact-list-text text-start text-sm-center px-2">
+                        <div class="mb-3 d-flex align-items-center justify-content-start justify-content-sm-center">
+                            <i class="fa-solid fa-phone contact-icon"></i>
+                            <span><strong>Phone:</strong> <a href="tel:+14039709104">+1 (403) 970-9104</a></span>
+                        </div>
+                        <div class="mb-3 d-flex align-items-center justify-content-start justify-content-sm-center text-break">
+                            <i class="fa-solid fa-envelope contact-icon"></i>
+                            <span><strong>Email:</strong> <a href="mailto:reikiholistichands@gmail.com">reikiholistichands@gmail.com</a></span>
+                        </div>
+                        <div class="mb-3 d-flex align-items-center justify-content-start justify-content-sm-center">
+                            <i class="fa-solid fa-location-dot contact-icon"></i>
+                            <span><strong>Address:</strong> 390 Redstone Blvd NE, Calgary, AB T3N 1K2</span>
+                        </div>
+                        <div class="mb-4 d-flex align-items-center justify-content-start justify-content-sm-center text-break">
+                            <i class="fa-brands fa-youtube contact-icon text-danger"></i>
+                            <span><strong>YouTube Channel:</strong> <a href="https://www.youtube.com/@reikiholistichands" target="_blank" rel="noopener noreferrer">Holistic Vibes</a></span>
+                        </div>
+
+                        <div class="mt-4 pt-2 text-center" id="calendar-booking-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <p class="mb-0 small">&copy; <a href="https://reikiholistichands.com/" class="text-white text-decoration-none">Centre of Holistic Healings Art.</a> All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+    <script>
+        window.addEventListener('load', function() {
+            const container = document.getElementById('calendar-booking-container');
+            if (container) {
+                calendar.schedulingButton.load({
+                    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1cbK5ymG9DAQdDMXq4g3Q9gPGg7F8PtIDDIHVLgayeiK4Ig9aX4IzZ82PiCiyJqCFYtk9Ob_s6?gv=true',
+                    color: '#ff5858',
+                    label: 'Book an Appointment',
+                    target: container
+                });
+            }
+        });
+
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('mobileNavMenu');
+            const icon = document.getElementById('menuToggleIcon');
+            navMenu.classList.toggle('show');
+            if (navMenu.classList.contains('show')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+    </script>
+</body>
+</html>

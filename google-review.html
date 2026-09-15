@@ -1,0 +1,512 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Google Reviews | Centre of Holistic Healings Art</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.PNG" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Calendar Appointment Scheduling CSS -->
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #1e0036 0%, #3a0066 50%, #6a11cb 100%);
+            --hero-overlay: linear-gradient(135deg, rgba(20, 5, 38, 0.88) 0%, rgba(46, 12, 88, 0.82) 50%, rgba(106, 17, 203, 0.75) 100%);
+            --accent-gradient: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);
+            --btn-glow: linear-gradient(135deg, #f857a6 0%, #ff5858 100%);
+            --light-about-gradient: linear-gradient(135deg, #f3f0ff 0%, #e8f0fe 50%, #fdfbfb 100%);
+            --multicolor-border: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 50%, #ffd1ff 100%);
+            --gold-accent: #f39c12;
+            --bg-light: #f8f9fa;
+            --text-dark: #111111;
+            --nav-bg: #1e0036;
+            --violet-color: #6a11cb;
+            --navbar-height: 65px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding-top: var(--navbar-height);
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            overflow-x: hidden;
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container, .container-fluid {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        /* --- FIXED NAVBAR --- */
+        .navbar {
+            background: var(--primary-gradient);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            width: 100% !important;
+            height: var(--navbar-height);
+            z-index: 99999 !important;
+            margin: 0;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            font-weight: 600;
+            font-size: 1rem;
+            white-space: normal;
+            display: flex;
+            align-items: center;
+            max-width: calc(100% - 50px);
+        }
+
+        .nav-logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ffb199;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        /* Mobile Overlay Menu */
+        @media (max-width: 991.98px) {
+            .navbar-brand .nav-logo {
+                display: none;
+            }
+
+            .navbar-collapse {
+                position: fixed;
+                top: var(--navbar-height);
+                right: -100%;
+                width: 100%;
+                height: calc(100vh - var(--navbar-height));
+                background: linear-gradient(180deg, rgba(30, 0, 54, 0.98) 0%, rgba(106, 17, 203, 0.95) 100%);
+                backdrop-filter: blur(10px);
+                display: flex !important;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                transition: right 0.35s ease-in-out;
+                z-index: 99998;
+                padding: 20px;
+                text-align: center;
+                overflow-y: auto;
+            }
+
+            .navbar-collapse.show {
+                right: 0;
+            }
+
+            .mobile-menu-header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            .mobile-menu-logo {
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid #ffb199;
+                box-shadow: 0 4px 15px rgba(255, 8, 68, 0.4);
+                background-color: #ffffff;
+                padding: 2px;
+                margin-bottom: 8px;
+            }
+
+            .mobile-menu-title {
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+
+            .navbar-nav {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                margin: 0;
+            }
+
+            .nav-item {
+                margin: 6px 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-link {
+                font-size: 1.1rem !important;
+                font-weight: 600;
+                color: #ffffff !important;
+                display: block;
+                text-align: center;
+                padding: 8px 0;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .mobile-menu-header {
+                display: none;
+            }
+            .nav-link {
+                color: #ffffff !important;
+                font-weight: 500;
+                transition: color 0.3s ease;
+            }
+            .nav-link:hover {
+                color: #ffb199 !important;
+            }
+        }
+
+        /* --- GOOGLE REVIEWS SECTION --- */
+        .google-reviews-section {
+            background: #ffffff;
+            padding: 60px 0;
+            min-height: calc(100vh - var(--navbar-height) - 140px);
+        }
+
+        .review-card {
+            background: #f8f9fa;
+            border: 1px solid #e2d4f3;
+            border-radius: 16px;
+            padding: 24px;
+            height: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .review-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(106, 17, 203, 0.1);
+        }
+
+        .review-stars {
+            color: #f39c12;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+
+        .review-text {
+            font-size: 0.95rem;
+            color: #444444;
+            line-height: 1.6;
+            font-style: italic;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-top: 1px solid #eee;
+            padding-top: 12px;
+        }
+
+        .reviewer-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--violet-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .reviewer-details h6 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #1e0036;
+        }
+
+        .reviewer-details span {
+            font-size: 0.8rem;
+            color: #777777;
+        }
+
+        .google-badge-btn {
+            background: #ffffff;
+            color: #444444;
+            border: 1px solid #ccd1d9;
+            font-weight: 600;
+            padding: 10px 24px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .google-badge-btn:hover {
+            background: #f8f9fa;
+            color: #111111;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Header Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a class="navbar-brand m-0" href="index.html">
+                <img src="images/logo.PNG" alt="Logo" class="nav-logo" onerror="this.src='https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=100&q=80'">
+                <span>Centre of Holistic Healings Art</span>
+            </a>
+            <button class="navbar-toggler text-white border-0 shadow-none" type="button" onclick="toggleMobileMenu()" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars fs-3" id="menuToggleIcon"></i>
+            </button>
+
+            <div class="navbar-collapse" id="mobileNavMenu">
+                <div class="mobile-menu-header">
+                    <img src="images/logo.PNG" alt="Logo" class="mobile-menu-logo" onerror="this.src='https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=150&q=80'">
+                    <div class="mobile-menu-title">Centre of Holistic Healings Art</div>
+                </div>
+
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="center-tour.html">Center Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Student Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="google-review.html">Google Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about-preview">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- GOOGLE REVIEWS SECTION -->
+    <section class="google-reviews-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: #1e0036;">Google Reviews</h2>
+                <p class="text-muted">What our clients and students are saying about their healing experiences</p>
+                <!-- Optional link/button to your Google Business Profile review link -->
+                <a href="https://share.google/4TRALiEv0xsrs6Gzq" target="_blank" rel="noopener noreferrer" class="google-badge-btn mt-2">
+                    <i class="fa-brands fa-google text-danger"></i> Review Us on Google
+                </a>
+            </div>
+
+            <div class="row g-4">
+                <!-- Sample Review Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text">"I learn reality of life after learning Reiki from Jaswinder Singh Sidhu sir g and he gave me right path of spirtuality. I really thankful to Jaswinder sir g and Reiki because I improved my eyesight with the help of both of them. I git inner peace and calm as well as my guru g help me in maintaining my physical and mental health. So i thanks a lot to my Gurudev"</p>
+                        </div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">S</div>
+                            <div class="reviewer-details">
+                                <h6>Amarjit Kaur</h6>
+                                <span>Google Reviewer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text">"I am thankful to reiki master jaswinder singh sidhu sir for blessing me with the gift of reiki. After learning reiki, my life has changed both at spiritual and wordly level. I highly recommend jaswinder sir, if anybody wants to enjoy inner spiritual experiences."</p>
+                        </div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">S</div>
+                            <div class="reviewer-details">
+                                <h6>Paramjeet Kaur</h6>
+                                <span>Google Reviewer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text">"I would like to thank Reiki Master Jaswinder Singh Sidhu Sir for giving me a golden opportunity. It was a wonderful experience learning Reiki from Sir. To be honest, it is essential for the holistic development of an individual. Moreover, I would like to thank Manjeet Singh for introducing me with energy healing. Sir taught me about the importance of Reiki in our daily life. It is helping me a lot to become a better person. Full of Gratitude, patience and perseverance.Thank your Sir 😊🙏🙏"</p>
+                        </div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">S</div>
+                            <div class="reviewer-details">
+                                <h6>Gurpreet Singh</h6>
+                                <span>Google Reviewer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text">"Jaswinder Sir is an exceptional Reiki teacher & healer. Each session with him brings peace and clarity, and his guidance has greatly supported my inner growth. I highly recommend him to anyone seeking holistic care and spiritual healing."</p>
+                        </div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">S</div>
+                            <div class="reviewer-details">
+                                <h6>Navjot Arora</h6>
+                                <span>Google Reviewer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Sample Review Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text">"I had the opportunity to learn Reiki from Master Jaswinder Singh Sidhu a few years ago, and it remains one of the most impactful experiences of my life. Teaching style of jaswinder sir is incredibly engaging and supportive, making complex concepts easy to grasp for beginners like myself. I appreciated how he encouraged questions and discussions, allowing everyone to share their experiences. His insights and personal experiences added depth to the lessons, making them memorable and meaningful. After completing the course, I felt empowered to practice Reiki confidently, and I always use the techniques and principles I learned. Overall, my experience with Jaswinder Singh Sidhu was transformative. I highly recommend his Reiki courses to anyone interested in personal growth and healing. It was a journey that has positively influenced my life in many ways."</p>
+                        </div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">R</div>
+                            <div class="reviewer-details">
+                                <h6>Simranjeet kaur</h6>
+                                <span>Google Reviewer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sample Review Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text">"Learning crystals from Jaswinder Sir was a great experiences and deepening my understanding for their properties. Thank you so much sir for giving me a such wonderful opportunity."</p>
+                        </div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">A</div>
+                            <div class="reviewer-details">
+                                <h6>Navjot Sarwara</h6>
+                                <span>Google Reviewer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Return to Main Page Button matching the About Us button style -->
+            <div class="text-center mt-5">
+                <a href="index.html" class="btn btn-primary rounded-pill px-4 py-2 font-weight-bold">
+                    <i class="fa-solid fa-arrow-left me-2"></i> Return to Main Page
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <p class="mb-0 small">&copy; <a href="https://reikiholistichands.com/" class="text-white text-decoration-none">Centre of Holistic Healings Art.</a> All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('mobileNavMenu');
+            const icon = document.getElementById('menuToggleIcon');
+            navMenu.classList.toggle('show');
+            if (navMenu.classList.contains('show')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+    </script>
+</body>
+</html>
